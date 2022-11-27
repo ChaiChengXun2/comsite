@@ -1,0 +1,17 @@
+.information {
+    flex-direction: column;
+}
+
+.information .description {width: 80%}
+
+.information .features {
+    width: 80%;
+    margin: 50px 0 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25%);
+    grid-auto-rows: max-content;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.information .default-button {margin: 20px 0 50px 0}

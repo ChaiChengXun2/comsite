@@ -1,0 +1,14 @@
+@media screen and (max-width: 1400px) {
+    .modal.project .container .information img {
+        width: 60vw;
+        margin-top: calc(1.5 * (30px + 2rem));
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .modal.project .container .information img {margin-top: calc(0.5 * (30px + 2rem))}
+}
+
+@media screen and (max-width: 768px) {
+    .modal.project .container .modal-nav p {margin-right: 4rem}
+}

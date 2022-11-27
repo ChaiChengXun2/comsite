@@ -1,0 +1,8 @@
+.process {
+    flex-direction: column;
+}
+
+.process .steps {
+    flex-direction: column;
+    width: 70%;
+}

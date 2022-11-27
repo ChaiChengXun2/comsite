@@ -1,0 +1,6 @@
+@media screen and (max-width: 1024px) {
+    .landing-page .lp {
+        width: auto;
+        height: 110vh;
+    }
+}

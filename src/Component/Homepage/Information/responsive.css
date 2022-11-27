@@ -1,0 +1,14 @@
+@media screen and (max-width: 1300px) {
+    .information .features {width: 90%}
+}
+
+@media screen and (max-width: 1024px) {
+    .information .features {
+        width: 80%;
+        grid-template-columns: repeat(auto-fit, 80%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .information .features {width: 100%}
+}

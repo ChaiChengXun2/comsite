@@ -1,0 +1,14 @@
+.about {
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.about .text-description {
+    width: 80%;
+    margin: 0 0 50px 0;
+}
+
+.about .steps {
+    flex-direction: column;
+    width: 70%;
+}

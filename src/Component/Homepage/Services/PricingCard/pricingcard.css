@@ -1,0 +1,91 @@
+.pricing-card { 
+    background: var(--main-colour);
+    flex-direction: column;
+    border-radius: var(--standard-radius);
+    margin: 0 20px;
+    position: relative;
+    border: 1px solid var(--disabled-colour);
+}
+
+.pricing-card.large {
+    height: 375px;
+    width: 300px;
+}
+
+.pricing-card.small {
+    height: 300px;
+    width: 250px;
+}
+
+.pricing-card .show {display: none}
+
+.pricing-card .disable {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: var(--standard-radius);
+}
+
+.pricing-card .disable p {
+    text-align: center;
+    width: 80%;
+    color: var(--text-colour);
+    font-weight: 600;
+}
+
+.pricing-card .title span, .pricing-card .benefits .pricing-benefit p {font-size: 1rem}
+
+.pricing-card .title { 
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--text-colour);
+}
+
+.pricing-card .price { 
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.pricing-card .price .value { 
+    font-weight: 700;
+    color: var(--primary-colour);
+    font-size: 1.8rem;
+    margin: 0 5px;
+}
+
+.pricing-card .price .time { 
+    display: flex;
+    align-items: flex-end;
+    height: 90%;
+}
+
+.pricing-card .price .currency { 
+    display: flex;
+    justify-content: flex-start;
+    height: 90%;
+}
+
+.pricing-card .benefits {
+    width: 100%;
+    flex-direction: column;
+}
+
+.pricing-card .benefits .pricing-benefit {
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pricing-card .benefits .pricing-benefit svg {
+    margin-right: 7.5px;
+    font-size: 1.2rem;
+}
+
+.pricing-card .benefits .pricing-benefit.green svg {color: mediumseagreen}
+.pricing-card .benefits .pricing-benefit.red svg {color: tomato}
+.pricing-card .benefits .pricing-benefit p {width: 100%}

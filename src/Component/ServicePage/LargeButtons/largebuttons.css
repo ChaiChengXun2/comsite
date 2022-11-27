@@ -1,0 +1,46 @@
+.large-button { 
+    width: 60%;
+    background: var(--main-colour);
+    border-radius: var(--standard-radius);
+    cursor: pointer;
+    user-select: none;
+    margin-top: 30px;
+    flex-direction: row;
+    border: 1px solid var(--text-colour);
+}
+
+.large-button .head {
+    flex-direction: row;
+    padding: 1.5rem 0;
+    width: 85%;
+}
+
+.large-button .head .header {
+    font-size: 1.3rem;
+    color: var(--text-colour);
+}
+.large-button .answer {display: none}
+
+.large-button.active .answer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 85%;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+.large-button.active {flex-direction: column}
+
+.large-button .head .container {
+    flex-direction: row;
+}
+
+.large-button .head .container p {
+    font-size: 1.3rem;
+}
+
+.large-button .head .container svg {
+    color: var(--text-colour);
+    font-size: 1.3rem;
+    margin-left: 10px;
+}

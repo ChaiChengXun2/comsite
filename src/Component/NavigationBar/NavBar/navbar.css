@@ -1,0 +1,35 @@
+.nav-bar {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-bar .temp {
+  position: absolute;
+  background: transparent;
+  inset: 0;
+}
+
+.nav-bar .links {
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-bar .links .default-button {
+  margin: 20px 0;
+  width: 50%;
+  text-align: center;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-colour);
+}
+
+.nav-bar .links .default-button:hover {
+  background: none;
+  color: var(--disabled-colour);
+  border-color: none;
+}

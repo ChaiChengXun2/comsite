@@ -1,0 +1,4 @@
+@media screen and (max-width: 767px) {
+    .navigation-bar .brand {margin-left: 4rem}
+    .navigation-bar .hamburger {margin-right: 4rem}
+}

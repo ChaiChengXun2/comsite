@@ -1,0 +1,23 @@
+.step {
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.step svg {
+    font-size: 7rem;
+    color: var(--primary-colour);
+    margin-right: 25px;
+}
+
+.step .information {
+    width: 100%;
+}
+
+.step .information .title {
+    font-weight: 600;
+}
+
+.step .information .description {
+    font-size: 1.2rem;
+    width: 100%;
+}

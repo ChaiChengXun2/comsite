@@ -1,0 +1,6 @@
+.featured-project {
+    min-height: 50vh;
+    flex-direction: column;
+}
+
+.featured-project .default-button {margin-bottom: 50px}

@@ -1,0 +1,45 @@
+.service { 
+    min-height: 50vh;
+    flex-direction: column;
+}
+.service .services .pricing-cards {flex-direction: row}
+
+.service .buttons {
+    flex-direction: row;
+    margin: 50px 0;
+}
+
+.service .buttons a {
+    margin: 0 20px;
+    flex-direction: row;
+}
+
+.service .buttons a:first-of-type svg{margin-right: 5px}
+
+.service .buttons a:last-of-type {
+    text-decoration: none;
+    position: relative;
+}
+
+.service .buttons a:last-of-type p {font-size: 1rem}
+
+.service .buttons a:last-of-type svg {
+    margin-left: 5px;
+    font-size: 1rem;
+    color: var(--text-colour);
+}
+
+.service .buttons a:last-of-type::after {
+    content: ""; 
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0.16em;
+    background: black; 
+    transition: 0.3s;
+    background: var(--text-colour);
+    bottom: -10px; 
+    border-radius: 25px;
+}
+
+.service .buttons a:last-of-type:hover::after {width: 110%}
