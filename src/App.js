@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Homepage from './Component/Homepage';
-import { BrowserRouter, Routes, Route, useFetcher } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ScrollToTop from "./ScrollToTop";
 import ProjectPage from './Component/ProjectPage';
 import ServicePage from "./Component/ServicePage";
