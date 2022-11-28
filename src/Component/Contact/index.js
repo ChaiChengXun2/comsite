@@ -6,7 +6,7 @@ import { BsInstagram, BsWhatsapp, BsFacebook } from "react-icons/bs";
 const Contact = () => {
   return (
     <div className='contact flex-center-center content'>
-      <img src="Lp.jpg" alt="contact" />
+      <img src="https://ik.imagekit.io/ccx/Lp-min_N-Cv00SzIa.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669555120219" alt="contact" />
       <div className="information flex-center-center">
         <div className="title default-title">Are You Interested? </div>
         <a className="default-button flex-center-center" href='https://wa.me/60126989326' rel="noreferrer" target='_blank'><BsWhatsapp />Contact Me</a>

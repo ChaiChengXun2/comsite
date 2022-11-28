@@ -7,13 +7,13 @@ import Process from './Process';
 import Services from "./Services";
 import NavigationBar from "../NavigationBar";
 
-const Homepage = () => {
+const Homepage = ({ ccx }) => {
   return (
     <div>
       <NavigationBar />
       <LandingPage />
       <Information />
-      <FeaturedProjects />
+      <FeaturedProjects ccx={ccx}/>
       <Services />
       <Process />
       <Contact />

@@ -5,7 +5,7 @@ import Project from '../../Project';
 import ProjectModal from "../../ProjectModal";
 import { NavLink } from 'react-router-dom';
 
-const FeaturedProjects = () => {
+const FeaturedProjects = ({ ccx }) => {
 
   const [showModal, setShowModal] = useState(false);
   const [data, setData] = useState({});
@@ -23,10 +23,14 @@ const FeaturedProjects = () => {
       <Title title='Projects' sub='Featured Works' />
       <ProjectModal showModal={showModal} setShowModal={setShowModal} data={data}/>
       <div className="projects gay-grid">
-        <Project imgSrc="cafe 1 marketing.png" title="Classy Cafe" type="Template" setShowModal={setShowModal} setData={setData}/>
-        <Project imgSrc="cafe 2 marketing.png" title="Modern Cafe" type="Template" setShowModal={setShowModal} setData={setData}/>
-        <Project imgSrc="skin care marketing.png" title="Beauty Products" type="Template" setShowModal={setShowModal} setData={setData}/>
-        <Project imgSrc="portfolio 1 marketing.png" title="Personal Portfolio" type="Template" setShowModal={setShowModal} setData={setData}/>
+        {
+          ccx && 
+          ccx.slice(0, 4).map((project, i) => {
+            return (
+              <Project imgSrc={project.url} title={project.name} type={project.type} setShowModal={setShowModal} setData={setData} key={i}/>
+            )
+          })
+        }
       </div>
       <NavLink className="default-button" to='/projects'>View More</NavLink>
     </div>

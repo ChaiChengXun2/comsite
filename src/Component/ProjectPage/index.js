@@ -8,7 +8,7 @@ import Project from '../Project';
 import Title from "../Title";
 import ProjectModal from "../ProjectModal";
 
-const ProjectPage = () => {
+const ProjectPage = ({ ccx }) => {
 
   useEffect(() => {
     document.title = "All Projects | ComSite"
@@ -95,11 +95,14 @@ const ProjectPage = () => {
         <p onClick={toggleClass} className="default-text flex-center-center">Template</p>
       </section>
       <div className="projects gay-grid">
-        <Project imgSrc="cafe 1 marketing.png" title="Classy Cafe" type="Template" setShowModal={setShowModal} setData={setData}/>
-        <Project imgSrc="cafe 2 marketing.png" title="Modern Cafe" type="Template" setShowModal={setShowModal} setData={setData}/>
-        <Project imgSrc="skin care marketing.png" title="Beauty Products" type="Template" setShowModal={setShowModal} setData={setData}/>
-        <Project imgSrc="portfolio 1 marketing.png" title="Personal Portfolio" type="Template" setShowModal={setShowModal} setData={setData}/>
-        <Project imgSrc="portfolio 2 marketing.png" title="Classy Personal Portfolio" type="Template" setShowModal={setShowModal} setData={setData}/>
+        {
+          ccx && 
+          ccx.map((project, i) => {
+            return (
+              <Project imgSrc={project.url} title={project.name} type={project.type} setShowModal={setShowModal} setData={setData} key={i}/>
+            )
+          })
+        }
       </div>
       <Contact />
     </div>
