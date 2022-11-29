@@ -15,22 +15,17 @@ const auth = getAuth(app);
 const App = () => {
 
   const [ccx, setCCX] = useState(false);
-  const [user, setUser] = useState(false);
 
   useEffect(() => {
-    signInAnonymously(auth).then(setUser(true));
-  }, [])
-
-  useEffect(() => {
-    if (user) {
+    signInAnonymously(auth).then(() => {
       onValue(ref(db, '/1FXNuFqKRteTVj4-hzrdc0hf575JdUqsn1Ds0JqA7J3k/Sheet1'), (snapshot) => {
         const data = snapshot.val(); 
         if (data !== null) {
           setCCX(Object.values(data))
         }
       }, {onlyOnce: true})
-    }
-  }, [user])
+    });
+  }, [])
 
   return (
     <BrowserRouter>
