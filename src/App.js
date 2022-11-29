@@ -32,10 +32,6 @@ const App = () => {
     }
   }, [user])
 
-  useEffect(() => {
-    console.log(ccx);
-  }, [ccx])
-
   return (
     <BrowserRouter>
       <ScrollToTop />
