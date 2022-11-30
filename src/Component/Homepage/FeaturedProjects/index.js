@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import "./featuredprojects.css";
 import Title from "../../Title";
 import Project from '../../Project';
@@ -9,14 +9,6 @@ const FeaturedProjects = ({ ccx }) => {
 
   const [showModal, setShowModal] = useState(false);
   const [data, setData] = useState({});
-
-  useEffect(() => {
-    if (showModal) {
-      document.body.style.overflow = "hidden"
-    } else {
-      document.body.style.overflow = "unset"
-    }
-  }, [showModal])
 
   return (
     <div className='featured-project content flex-center-start'>

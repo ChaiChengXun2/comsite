@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./projectmodal.css";
 import "./responsive.css";
 import Modal from "../Modal";
 import { NavLink } from 'react-router-dom';
 
 const ProjectModal = ({ showModal, setShowModal, data }) => {
+
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "unset"
+    }
+  }, [showModal])
+
   return (
     <Modal setShowModal={setShowModal} showModal={showModal} type='project'>
       <div className="container flex-center-center">
