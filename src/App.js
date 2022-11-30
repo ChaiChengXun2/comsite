@@ -5,6 +5,7 @@ import ScrollToTop from "./ScrollToTop";
 import ProjectPage from './Component/ProjectPage';
 import ServicePage from "./Component/ServicePage";
 import About from "./Component/About";
+import NotFound from "./Component/NotFound";
 import { getAuth, signInAnonymously } from "firebase/auth";
 import { app } from "./firebase";
 import { onValue, ref } from 'firebase/database';
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/projects" element={<ProjectPage ccx={ccx}/>}></Route>
         <Route path="/service" element={<ServicePage />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/*" element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>
   )
