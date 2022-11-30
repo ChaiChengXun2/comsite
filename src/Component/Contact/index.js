@@ -12,9 +12,9 @@ const Contact = () => {
         <a className="default-button flex-center-center" href='https://wa.me/60126989326' rel="noreferrer" target='_blank'><BsWhatsapp />Contact Me</a>
         <footer className='flex-center-center'>
           <div className='social-media flex-center-center'>
-            <a href='https://github.com/ChaiChengXun2' rel="noreferrer" target="_blank"><BsInstagram /></a>
-            <a href='https://github.com/ChaiChengXun2' rel="noreferrer" target="_blank"><BsWhatsapp /></a>
-            <a href='https://github.com/ChaiChengXun2' rel="noreferrer" target="_blank"><BsFacebook /></a>
+            <a href='https://www.instagram.com/comsitemy/' rel="noreferrer" target="_blank"><BsInstagram /></a>
+            <a href='https://wa.me/60126989326' rel="noreferrer" target="_blank"><BsWhatsapp /></a>
+            <a href='https://www.facebook.com/profile.php?id=100088453232965' rel="noreferrer" target="_blank"><BsFacebook /></a>
           </div>
           <div className='text flex-center-center'><AiOutlineCopyrightCircle /> Copyright 2022 ComSite. All Rights Reserved</div>
         </footer>
