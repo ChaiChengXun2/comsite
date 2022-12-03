@@ -38,7 +38,7 @@ const ProjectPage = ({ ccx }) => {
   }
 
   useEffect(() => {
-    const cards = document.querySelectorAll(".project-card");
+    const cards = document.querySelectorAll(".project");
     const keyUp = () => {
       document.querySelector(".choices").children[0].click();
       cards.forEach(card => {
@@ -56,7 +56,7 @@ const ProjectPage = ({ ccx }) => {
   }, [search])
 
   useEffect(() => {
-    const cards = document.querySelectorAll(".project-card");
+    const cards = document.querySelectorAll(".project");
     setSearch("");
 
     if (filter === "All") {
